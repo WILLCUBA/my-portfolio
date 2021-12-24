@@ -1,6 +1,9 @@
 /*Variables*/
-
-
+:root {
+    --primary-color:rgb(212, 83, 50);
+    --secondary-color:rgb(201, 207, 216);
+    --terciary-color:rgb(34, 37, 41);
+}
 
 /*Global*/
 * {
@@ -9,19 +12,49 @@
     padding: 0;
 }
 
+body {
+    color: var(--tertiary-color);
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
 /*Hedear Begins*/
+
 header {
-    display: sticky;
-}
-
-header ul {
+    padding: 20px 35px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style-type: none;
+    justify-content: space-between;
+    background-color: var(--terciary-color);
+}
+header h1 {
+    font-weight:lighter;
+    margin: 0;
+    font-size: 32px;
+    color: var(--secondary-color);
+}
+.pinero {
+    color: var(--primary-color);
 }
 
-h1 {
-    margin: 15px 10px;
-    text-align: center;
+/* Header Nav Begins */
+
+header nav {
+    margin: 10px 0;
 }
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight:normal;
+    font-size: 1.2vw;
+  }
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
