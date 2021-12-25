@@ -75,7 +75,6 @@ header a {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
-    position: relative;
     background-image: url(/assets/images/more-photo-file-2-1169682.jpg);
     background-size: cover;
     background-position: center;
@@ -84,12 +83,11 @@ header a {
     height: 30vh;
 }
 
-.hero div {
+.hero aside {
     margin: 15px;
 }
 
 .hero h2 {
-    position: relative;
     color: var(--terciary-color);
     background-color: var(--secondary-color);
     display: block;
@@ -104,3 +102,31 @@ header a {
 }
 
 /*Hero End*/
+
+/*About Me Section Begins*/
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--terciary-color);
+}
+
+.about-me div {
+    align-self: center;
+    margin: 0 25px 0 15px;
+}
+
+.about-me div h2 {
+    text-align: right;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.about-me div p {
+    text-align: right;
+    font-size: 80%;
+}
+
+.about-me div img {
+    border-radius: 50%;
+}
