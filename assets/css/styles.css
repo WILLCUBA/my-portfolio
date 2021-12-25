@@ -2,7 +2,7 @@
 :root {
     --primary-color:rgb(212, 83, 50);
     --secondary-color:rgb(201, 207, 216);
-    --terciary-color:rgb(34, 37, 41);
+    --terciary-color:rgb(60, 65, 71);
 }
 
 /*Global*/
@@ -26,7 +26,7 @@ header {
     top: 0;
     justify-content: space-between;
     background-color: var(--terciary-color);
-    background-image: url(/assets/images/314827.jpg);
+    background-image:url(/assets/images/more-photo-file-2-1169682.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -37,7 +37,7 @@ header h1 {
     font-weight:lighter;
     margin: 0;
     font-size: 32px;
-    color: var(--secondary-color);
+    color: var(--terciary-color);
 }
 .pinero {
     color: var(--primary-color);
@@ -70,17 +70,37 @@ header a {
   /*Header Nav End*/
   /*Header End*/
 
+  /*Hero Begins*/
 .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
     position: relative;
-    background-image: url(/assets/images/314827.jpg);
+    background-image: url(/assets/images/more-photo-file-2-1169682.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-position: 80%;
-    height: 500px;
+    height: 30vh;
 }
 
-.hero-text {
-    position: relative;
-    display: flex;
+.hero div {
+    margin: 15px;
 }
+
+.hero h2 {
+    position: relative;
+    color: var(--terciary-color);
+    background-color: var(--secondary-color);
+    display: block;
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.hero span {
+    color: var(--primary-color);
+}
+
+/*Hero End*/
