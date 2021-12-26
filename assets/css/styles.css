@@ -1,7 +1,7 @@
 /*Variables*/
 :root {
     --primary-color:rgb(0, 0, 0);
-    --secondary-color:rgb(201, 207, 216);
+    --secondary-color:rgb(231, 235, 241);
     --terciary-color:rgb(60, 65, 71);
 }
 
@@ -21,10 +21,12 @@ body {
 
   header {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       position: sticky;
       top:0;
       z-index: 999;
+      background-color:var(--secondary-color);
   }
   .my-name {
       display: flex;
@@ -69,4 +71,58 @@ body {
       font-weight: 300;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;        
   }
+/*Nav End*/
+/*Header End*/
 
+/*Section Hero Begins*/
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.presentation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.presentation-text > p {
+    font-weight: 100;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px 10px;
+    font-size: 25px;
+}
+
+.presentation-text h1 {
+    font-size: 35px;
+    padding: 5px;
+    text-align: center;
+}
+
+.social-media ul {
+    display: flex;
+    list-style: none;
+    padding: 5px;
+}
+
+.social-media {
+    align-self: center;
+}
+.social-media ul li {
+    padding: 10px;
+}
+
+.social-media ul li a i{
+    width: 20px;
+    color: var(--primary-color);
+    font-size: 25px;
+}
+
+/*Hero Section End*/
