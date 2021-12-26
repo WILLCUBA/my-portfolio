@@ -27,7 +27,7 @@ body {
       position: sticky;
       top:0;
       z-index: 999;
-      background-color: var(--terciary-color);
+      background-color: rgb(60, 65, 71,0.9);
   }
   .my-name {
       display: flex;
@@ -50,7 +50,7 @@ body {
       font-weight: 100;
   }
 
-  /********Nav Begins**********/
+  /********Nav Begin**********/
 
   header nav  {
     padding: 5px;
@@ -78,7 +78,7 @@ body {
 /*Nav End*/
 /*Header End*/
 
-/*Section Hero Begins*/
+/*Section Hero Begin*/
 
 .hero {
     display: flex;
@@ -163,12 +163,14 @@ body {
 
 /*Work Section End*/
 
-/*Section about me begins*/
+/*Section about me begin*/
 
 .about-me {
     display: grid;
     grid-template-columns: 30% 70%;
     background-color: var(--terciary-color);
+    opacity: 1;
+    padding: 20px 20px;
 }
 
 .about-me h2 {
@@ -181,7 +183,30 @@ body {
     padding: 5px;
     line-height: 1.2;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
     color: var(--secondary-color);
 }
 
+/*Section About Me End*/
+
+/*Section Contact Me Begin*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    line-height: 1.5;
+    background-color: rgba(0, 0, 0,0.9);
+}
+
+address {
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 5px;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+}
