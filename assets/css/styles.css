@@ -88,7 +88,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-image: url(/assets/images/pexels-olia-danilevich-4974912.jpg);
+    background-image: url(/assets/images/2.jpg);
     background-size:cover;
     background-attachment: fixed;
     background-position: center;
@@ -237,9 +237,6 @@ footer aside {
     margin: 0 auto;
     text-align: center;
 }
-.footer-nav {
-    align-self: center;
-}
 
 /*Footer End */
 
@@ -286,8 +283,21 @@ footer aside {
   }
   
 
-@media screen and (max-width:575px) {
-    
+@media screen and (max-width:400px) {
+    .nav-links {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .nav-links li {
+        padding: 2px;
+        margin: 0;
+        font-size: 14px;
+        text-align: center;
+    }
+    .nav-links li a {
+        padding: 10px;
+        text-align: center;
+    }
   }
 /*Media Queries End*/
 
@@ -295,7 +305,5 @@ footer aside {
 
 a recent photo or avatar
 
-
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
-*/
+make the readme file
+/*
