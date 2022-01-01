@@ -88,13 +88,16 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-image: url(/assets/images/2.jpg);
     background-size:cover;
     background-attachment: fixed;
     background-position: center;
+    background-color: var(--terciary-color);
     height: 40vh;
 }
 
+.hero img {
+    width: 6.4vw;
+}
 .presentation {
     display: flex;
     flex-wrap: wrap;
@@ -303,7 +306,7 @@ footer aside {
 
 /*To do
 
-a recent photo or avatar
+fix the avatar on media queries
 
 make the readme file
 /*
